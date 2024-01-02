@@ -127,12 +127,6 @@ func ResourceInterfaceEthernet() *schema.Resource {
 			Required:    true,
 			Description: "The factory name of the identifier, serves as resource identifier. Determines which interface will be updated.",
 		},
-		"full_duplex": {
-			Type:        schema.TypeBool,
-			Description: `Defines whether the transmission of data appears in two directions simultaneously, only applies when auto-negotiation is disabled.`,
-			Default:     true,
-			Optional:    true,
-		},
 		KeyL2Mtu: {
 			Type:     schema.TypeInt,
 			Optional: true,
